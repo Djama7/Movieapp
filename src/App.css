@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -35,4 +36,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mlist {
+  display: flex;
+  justify-content: space-evenly ;
+  flex-wrap: wrap;
+  gap : 40px ;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
+}
+.btnadd{
+  margin-inline-end: 40px;
+}
+.ed {
+  gap: 54px;
+
+}
+.del {
+  margin-inline-start: 20px;
+
+
+  
+}
+body {
+  background-color: #282c34;
+}
+.rat { 
+  margin-inline-end: 20px;
+}
+.delee {
+  margin-inline-start: 15px;
 }
