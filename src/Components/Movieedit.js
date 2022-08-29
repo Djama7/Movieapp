@@ -13,7 +13,7 @@ const EditMovie=({movie,movies,setMovies})=>{
     const [rating,setRating] = useState(movie.rating)
 
     const handleEdit=()=>{
-        setMovies(movies.map(el => el.id == movie.id ? {...el,name,description,image,rating}:el))
+        setMovies(movies.map(el => el.id === movie.id ? {...el,name,description,image,rating}:el))
         handleClose()
     }
     return(

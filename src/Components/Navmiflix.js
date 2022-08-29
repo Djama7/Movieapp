@@ -12,6 +12,8 @@ import Rating from '@mui/material/Rating';
 
 
 
+
+
 const Navmiflix = ({searchm ,ratingm ,setSearchm,setRatingm,movies,setMovies})=> {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -39,7 +41,8 @@ const Navmiflix = ({searchm ,ratingm ,setSearchm,setRatingm,movies,setMovies})=>
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link> 
+             <Nav.Link href="/">Home</Nav.Link>
+            
           </Nav>
           
           <Button className='btnadd' variant="primary" onClick={handleShow}>

@@ -2,6 +2,7 @@ import { Card ,Button } from "react-bootstrap"
 import Rating from '@mui/material/Rating';
 import ReactReadMoreReadLess from "react-read-more-read-less";
 import EditMovie from "./Movieedit";
+import {Link} from 'react-router-dom'
 
 
 const Moviecard = ({movies,movie,setMovies}) => {
@@ -13,7 +14,7 @@ const Moviecard = ({movies,movie,setMovies}) => {
          <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={movie.image} style={{height :'390px'}} />
       <Card.Body>
-        <Card.Title>{movie.name}</Card.Title>
+        <Link to={`/Description/${movie.id}`}><Card.Title>{movie.name}</Card.Title></Link>
         <Card.Text>
         <ReactReadMoreReadLess
                 charLimit={40}
